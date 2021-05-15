@@ -146,13 +146,20 @@
         <div class="row">
           <div class='col-md-8 offset-md-2 text-left'>
             <p>讓我們有最新活動便通知你吧 !</p>
-          
+          <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzHeHjjuHPlNL9ZZmgGR681k2gAtDBJVZVl589HPw/exec">
           <div class="input-group input-group-lg">
-            <input type="text" class="form-control" aria-label="Sizing example input"  placeholder="e-mail"></input>
+            <input type="text" class="form-control" aria-label="Sizing example input"  name="email" placeholder="e-mail"></input>
           </div>
            <br>
-            <a class='btn' href='#'>提交</a>
-           </br>  
+            <input type="submit" class="btn" value="提交">
+           </br><br> 
+           <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <p>感謝您的填寫，元館館長會盡快與您聯絡 !</p>
+            
+           </div>
+           <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+          </form>  
           </div> 
         </div>
       </div>

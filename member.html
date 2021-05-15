@@ -48,6 +48,56 @@
             </nav>
         </div>
     </header> 
+    <section id='email'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-md-8 offset-md-2 text-center'>
+            <h3>你在偷看什麼啦</h3><br>
+          </div>
+          <div class='col-md-8 offset-md-2 text-center'>
+            <h3>加入我們</h3>
+          </div>
+        </div>
+        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzHeHjjuHPlNL9ZZmgGR681k2gAtDBJVZVl589HPw/exec">
+          <div class="row">
+            <div class='col-md-8 offset-md-2 text-left'>
+              <p>姓名</p>          
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" aria-label="Sizing example input"  name="name" placeholder="您的乳名"></input>  
+            </div>
+            <br><p>年齡</p>
+            <div class="input-group input-group-lg">
+              <input type="number" class="form-control" aria-label="Sizing example input"  name="age" placeholder="多老了啊ㄏㄚˋ"></input>  
+            </div>
+            <br><p>性別</p>
+            <div class="input-group input-group-lg">
+            <input type="radio" name="gender" value="男"><p>&ensp;男&ensp;&ensp;</p> <input type="radio" name="contact" value="女"><p>&ensp;女&ensp;&ensp;</p><input type="radio" name="contact" value="第三性"><p>&ensp;第三性&ensp;&ensp;</p> <input type="radio" name="contact" value="臭甲"><p>&ensp;臭甲</p>
+            </div>
+            <br><p>信箱</p>
+            <div class="input-group input-group-lg">
+              <input type="email" class="form-control" aria-label="Sizing example input"  name="email" placeholder="如果您不怕有垃圾郵件的話"></input>  
+            </div>
+            <br><p>為什麼想加入趙元館</p>
+            <div class="input-group input-group-lg">
+             
+              <textarea placeholder="&thinsp;您慢慢說，我慢慢聽" name="message" style="resize:none;width:100%;height:200px;"></textarea> 
+            </div>        
+             <br>
+              <input type="submit" class="btn" value="提交">
+             </br><br> 
+             <div style="display:none" class="thankyou_message">
+              <!-- You can customize the thankyou message by editing the code below -->
+              <p>感謝您的填寫，元館館長會盡快與您聯絡 !</p>
+              
+             </div>
+             <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+             <!-- 防止傳送後跳轉至另外一個網頁的腳本 -->
+            </form>  
+    
+          </div> 
+        </div>
+      </div>
+    </section>
 
 
 </body>

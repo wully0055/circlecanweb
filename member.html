@@ -63,24 +63,24 @@
             <div class='col-md-8 offset-md-2 text-left'>
               <p>姓名</p>          
             <div class="input-group input-group-lg">
-              <input type="text" class="form-control" aria-label="Sizing example input"  name="name" placeholder="您的乳名"></input>  
+              <input type="text" required class="form-control" aria-label="Sizing example input"  name="name" placeholder="您的乳名"></input>  
             </div>
             <br><p>年齡</p>
             <div class="input-group input-group-lg">
-              <input type="number" class="form-control" aria-label="Sizing example input"  name="age" placeholder="多老了啊ㄏㄚˋ"></input>  
+              <input type="number" required class="form-control" aria-label="Sizing example input"  name="age" placeholder="多老了啊ㄏㄚˋ" oninput="value=value.replace('-', '')"></input>  
             </div>
             <br><p>性別</p>
             <div class="input-group input-group-lg">
-            <input type="radio" name="gender" value="男"><p>&ensp;男&ensp;&ensp;</p> <input type="radio" name="contact" value="女"><p>&ensp;女&ensp;&ensp;</p><input type="radio" name="contact" value="第三性"><p>&ensp;第三性&ensp;&ensp;</p> <input type="radio" name="contact" value="臭甲"><p>&ensp;臭甲</p>
+            <input type="radio" name="gender" required value="男"><p>&ensp;男&ensp;&ensp;</p> <input type="radio" name="gender" value="女"><p>&ensp;女&ensp;&ensp;</p><input type="radio" name="gender" value="第三性"><p>&ensp;第三性&ensp;&ensp;</p> <input type="radio" name="gender" value="臭甲"><p>&ensp;臭甲</p>
             </div>
             <br><p>信箱</p>
             <div class="input-group input-group-lg">
-              <input type="email" class="form-control" aria-label="Sizing example input"  name="email" placeholder="如果您不怕有垃圾郵件的話"></input>  
+              <input type="email" required class="form-control" aria-label="Sizing example input"  name="email" placeholder="如果您不怕有垃圾郵件的話"></input>  
             </div>
             <br><p>為什麼想加入趙元館</p>
             <div class="input-group input-group-lg">
              
-              <textarea placeholder="&thinsp;您慢慢說，我慢慢聽" name="message" style="resize:none;width:100%;height:200px;"></textarea> 
+              <textarea placeholder="&thinsp;您慢慢說，我慢慢聽" required name="message" style="resize:none;width:100%;height:200px;"></textarea> 
             </div>        
              <br>
               <input type="submit" class="btn" value="提交">
